@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smith Braz || 5M1TH</title>
+
+  <style>
+    body {
+      font-family: 'Consolas', 'Courier New', monospace;
+      margin: 0;
+      background: #0d0d0d;
+      color: #e0e0e0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0d0d0d, #1a1a1a);
+      color: #ff0000;
+      padding: 30px;
+      text-align: center;
+      border-bottom: 2px solid #ff0000;
+      text-shadow: 0 0 10px #ff0000;
+    }
+
+    nav a {
+      color: #ffff00;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff0000;
+      text-shadow: 0 0 8px #ff0000;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #ff0000;
+      border-left: 4px solid #ff0000;
+      padding-left: 10px;
+      text-shadow: 0 0 8px #ff0000;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .talks {
+      background: #1a1a1a;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ffff00;
+      box-shadow: 0 0 10px rgba(255,255,0,0.4);
+    }
+
+    footer {
+      background: #0d0d0d;
+      color: #666;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      border-top: 2px solid #ff0000;
+    }
+
+    a { color: #ffff00; }
+    a:hover { color: #ff0000; }
+
+    /* FOTO PERFIL */
+    .profile-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .profile-img {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ff0000;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+      transition: 0.3s;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 0, 0, 1);
+    }
+
+    /* SLIDESHOW */
+    .slideshow-container {
+      position: relative;
+      max-width: 700px;
+      margin: 40px auto;
+      border: 2px solid #ff0000;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(255,0,0,0.8);
+      background: #000;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+      animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+      from { opacity: 0.4 }
+      to { opacity: 1 }
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      padding: 12px;
+      color: #ffff00;
+      font-weight: bold;
+      font-size: 20px;
+      background: rgba(0,0,0,0.6);
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: 0.3s;
+    }
+
+    .prev { left: 15px; }
+    .next { right: 15px; }
+
+    .prev:hover, .next:hover {
+      background: #ff0000;
+      color: #000;
+      box-shadow: 0 0 10px #ff0000;
+    }
+
+    .dots {
+      text-align: center;
+      padding: 10px;
+      background: #111;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 4px;
+      background-color: #444;
+      border-radius: 50%;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .active, .dot:hover {
+      background-color: #ff0000;
+      box-shadow: 0 0 8px #ff0000;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Smith Braz | 5M1TH</h1>
+  <p>Military in the Brazilian Navy | Cyber Warrior | CyberSecurity | Head of Red Team | Threat Hunter | CTF Player | Teacher</p>
+
+  <nav>
+    <a href="#questions">Questions</a>
+    <a href="#question1">Question 1</a>
+    <a href="#question2">Question 2</a>
+    <a href="#question3">Question 3</a>
+    <a href="#question4">Question 4</a>
+    <a href="#question5">Question 5</a>
+    <a href="#question6">Question 6</a>
+    <a href="#question7">Question 7</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>Sobre mim</h2>
+  <p>Profissional com mais de 25 anos de experiência na Marinha do Brasil, atuando na área de Tecnologia da Informação desde 2004. Especializado em segurança ofensiva, gerenciamento de redes e resposta a incidentes.</p>
+</section>
+
+<section>
+  <div class="profile-container">
+    <img src="smith.png" class="profile-img">
+  </div>
+</section>
+
+<section id="questions">
+  <h2>Questions</h2>
+  <p>Aqui estão algumas perguntas que respondi sobre estudar cibersegurança.</p>
+</section>
+
+<section id="question1">
+  <h2>Q1 - Como estudar para entrar na área profissional de Cybersecurity?</h2>
+  <p>Manter os estudos direcionados para atuação na área de Cybersecurity é uma tarefa muito árdua, entretanto, pode ser também muito prazerosa. Tudo depende de como encaramos os desafios.</p>
+  <p>Para poder iniciar as atividades é preciso fortalecer nossas bases fundamentais de conhecimento, a fim de envidar esforços de forma eficaz e eficiente.</p>
+  <p>Não obstante a isso se faz necessário utilizar ferramentas com o objetivo de colocar em prática os conhecimentos obtidos.</p>
+    <p>Pontos que precisam ter uma atenção especial:</p>
+    <ul>
+      <li>Arquitetura de Sistemas Operacionais(Linux e Windows)</li>
+      <li>Virtualização</li>
+      <li>Redes de Computadores</li>
+      <li>Conceitos Básicos de Cybersecurity</li>
+      <li>Laboratórios Práticos</li>
+    </ul>
+</section>
+
+<section id="question2">
+  <h2>Q2 - Onde encontro material gratuito para iniciar meus estudos?</h2>
+  <p>Para buscar conteúdo gratuito de cibersegurança, o segredo é combinar plataformas educacionais abertas, comunidades técnicas e repositórios de conhecimento.</p>
+  <p>Isso permite aprender tanto a teoria quanto a prática sem gastar nada.</p>
+  <p>Mas cuidado com suas buscas, pois elas podem seguir uma sequencia não tão lógica, te levando a andar em círculos sem evoluir.</p>
+  <p></p>
+    <p>Recomendações de estudos gratuitos em "Linux e Windows":</p>
+    <ul>
+      <li><a href="https://www.netacad.com/pt/courses/linux-unhatched?courseLang=pt-BR" target="_blank"> Linux Unhatched - NDG e Cisco Networking Academy</a></li>
+      <li><a href="https://www.netacad.com/pt/courses/linux-essentials?courseLang=en-US" target="_blank"> Linux Essentials - NDG e Cisco Networking Academy</a></li>
+      <li><a href="https://academy.secday.com.br/ead/account/login/?next=/aluno/course/linux/" target="_blank"> Base fundamental Linux - SecDay</a></li>
+      <li><a href="https://academy.secday.com.br/ead/account/login/?next=/aluno/course/fundamentos-base-de-windows/" target="_blank"> Base fundamental Windows - SecDay</a></li>
+    </ul>
+   <p>Recomendações de estudos gratuitos em "Virtualização":</p>
+    <ul>
+      <li><a href="https://academy.secday.com.br/ead/account/login/?next=/aluno/course/fundamentos-base-virtualizacao/" target="_blank"> Base fundamental Virtualização - SecDay</a></li>
+    </ul>
+   <p>Recomendações de estudos gratuitos em "Redes de Computadores":</p>
+    <ul>
+      <li><a href="https://www.netacad.com/pt/courses/networking-basics?courseLang=pt-BR" target="_blank"> Conceitos Básicos de Redes - Cisco Networking Academy</a></li>
+      <li><a href="https://www.securityblue.team/courses/introduction-to-network-analysis" target="_blank"> Introduction to Network Analysis - Security Blue Team</a></li>
+      <li><a href="https://academy.secday.com.br/ead/account/login/?next=/aluno/course/fundamentos-base-redes/" target="_blank"> Base fundamental Redes - SecDay</a></li>
+    </ul>
+   <p>Recomendações de estudos gratuitos em "Conceitos básicos de Cybersecurity":</p>
+    <ul>
+      <li><a href="https://www.netacad.com/pt/courses/introduction-to-cybersecurity?courseLang=pt-BR" target="_blank"> Introdução à Cibersegurança - Cisco Networking Academy</a></li>
+      <li><a href="https://academy.secday.com.br/ead/account/login/?next=/aluno/course/introducao-a-cibersecurity/" target="_blank"> Introdução a Cybersecurity - SecDay</a></li>
+    </ul>
+     <p>Recomendações de estudos gratuitos em "Trilhas de Cybersecurity":</p>
+    <ul>
+      <li><a href="https://www.netacad.com/pt/career-paths/cybersecurity?courseLang=pt-BR" target="_blank"> Analista de Cibersegurança Júnior - Cisco Networking Academy</a></li>
+      <li><a href="https://www.securityblue.team/courses/blue-team-junior-analyst-pathway-bundle"> Blue Team Junior Analyst Pathway Bundle - Security Blue Team</a></li>
+    </ul>
+    <p>Com esses materiais totalmente gratuitos, você começa a fortalecer as suas bases fundamentais de conhecimentos, imergindo neste universo de possibilidades.</p>
+    <p>Mas, nem só de teoria se alimenta o profissional de Cybersecurity, a aplicação prática dos conhecimentos adquiridos se faz essencial no nosso dia a dia.</p>
+  <p></p>
+  <p>Recomendações de estudos gratuitos voltados para a aplicação prática</p>
+    <ul>
+      <li><a href="https://picoctf.org" target="_blank"> picoCTF</a></li>
+      <li><a href="https://www.vulnhub.com" target="_blank"> VulnHub</a></li>
+      <li><a href="https://tryhackme.com" target="_blank"> Try Hack Me</a></li>
+      <li><a href="https://www.hackthebox.com" target="_blank"> Hack The Box</a></li>
+    </ul>
+  
+</section>
+
+
+<section id="question3">
+  <h2>Q3 - Quais os principais softskills para atuar na área de Cybersecurity?</h2>
+  <p>Os soft skills são tão importantes quanto os conhecimentos técnicos em cibersegurança porque o trabalho não se resume apenas a configurar firewalls ou analisar logs, eles envolvem pessoas, processos e comunicação constante.</p>
+    <p>Principais softskills:</p>
+    <ul>
+      <li>Pensamento Crítico e Resolução de Problemas</li>
+      <li>Colaboração - Trabalho em Equipe</li>
+      <li>Comunicação clara</li>
+      <li>Ética Profissional</li>
+      <li>Gostar de Estudar</li>
+      <li>Ser Autodidata</li>
+      <li>Aprendizado contínuo e Adaptabilidade</li>
+    </ul>
+</section>
+
+<section id="question4">
+  <h2>Q4 - O que é mais importante, fazer uma graduação ou uma certificação?</h2>
+  <p>Ambos tem a sua importância neste ecosistema de Cybersecurity, contudo a graduação de torna o primeiro filtro em uma vaga de emprego.</p>
+  <p>Sendo assim, em um primeiro momento busque pela sua graduação e depois pela certificação, mas não pare de estudar.</p>
+</section>
+
+<section id="question5">
+  <h2>Q5 - Qual graduação recomenda escolher para fazer?</h2>
+  <p>A maioria das vagas de entrada pedem "Graduação na Área de TI", sem determinar uma área específica.</p>
+  <p>Diante desta realidade, busque fazer a que você mais se identifica, afinal de contas, você passará um bom tempo estudando, tem que ser algo que te faça despertar o interesse pela tecnologia.</p>
+</section>
+
+<section id="question6">
+  <h2>Q6 - Qual a primeira certificação que alguem que pretende atuar em Cybersecurity deve buscar?</h2>
+  <p>A certificação mais solicitada para vagas de emprego em nível de entrada é a Security+ da CompTIA. Desta forma, é a certificação que eu recomendo em um momento inicial.</p>
+</section>
+
+<section id="question7">
+  <h2>Q7 - Não tenho dinheiro para bancar uma certificação, o que eu devo fazer?</h2>
+  <p>Eu também não!!! Mas devemos seguir estudando e estar pronto para quando a oportunidade surgir.</p>
+  <p>Se você pretende fazer a Security+, acesse o site oficial do vendor, entenda a grade exigida, busque por materiais na internet que te ajudem a seguir estudando.</p>
+  <p>Faça resumos, crie questionarios, monte estudos de caso, construa seus próprios laboratórios e continue sempre evoluindo.</p>
+   <p>Mostre para a rede que você está estudando, publique seus projetos de estudo no GitHub, poste no LinkedIn, ganhe visibilidade e aprenda a "se vender".</p>
+</section>
+
+<section id="back">
+  <h2>Voltar</h2>
+  <p>Voltar para a página principal.<a href="https://thiagosmith.github.io/site/">Link</a></p> 
+</section>
+  
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: thiago.smith.braz@gmail.com</p> 
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/smith-braz" target="_blank">Smith Braz</a></p> 
+  <p>GitHub: <a href="https://github.com/thiagosmith" target="_blank">thiagosmith</a></p>
+  <p>Credly: <a href="https://www.credly.com/users/smith-braz/badges" target="_blank">Badges</a></p>
+  <p>TryHackMe: <a href="https://tryhackme.com/p/5m1th" target="_blank">Profile</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Smith Braz || 5M1TH - Todos os direitos reservados</p>
+</footer>
+
+<script>
+let slideIndex = 1;
+let autoSlide;
+
+showSlides(slideIndex);
+startAutoSlide();
+
+function changeSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+function startAutoSlide() {
+  autoSlide = setInterval(() => changeSlide(1), 4000);
+}
+
+document.getElementById("cyberSlideshow").addEventListener("mouseenter", () => clearInterval(autoSlide));
+document.getElementById("cyberSlideshow").addEventListener("mouseleave", () => startAutoSlide());
+</script>
+
+</body>
+</html>
